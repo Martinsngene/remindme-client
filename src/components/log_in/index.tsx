@@ -5,9 +5,8 @@ import Link from "next/link";
 
 import styles from "./styles.module.css";
 import { Button, SignInWithGoogleBtn } from "../buttons";
-import Image from "next/image";
 
-const SignIn = () => {
+const LogIn = () => {
   return (
     <div className={styles.container}>
       <div className={styles.form_container}>
@@ -44,4 +43,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default LogIn;

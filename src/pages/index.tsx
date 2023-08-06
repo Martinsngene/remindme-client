@@ -3,16 +3,38 @@ import styles from "@/styles/Home.module.css";
 import { Button } from "@/components/buttons";
 import Input from "@/components/customInput";
 import Modal from "@/components/modal";
-import SignIn from "@/components/sign_in";
+import LogIn from "@/components/log_in";
+import { useState } from "react";
+import SignUp from "@/components/sign_up";
 
+// Font for application
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
+  // State management for forms
+  const [displayModal, setDisplayModal] = useState({
+    open: false,
+    form: "",
+  });
+
+  // Function to handle form display state
+  const showModal = (open: boolean, formType: string) => {
+    setDisplayModal({
+      open: open,
+      form: formType,
+    });
+  };
+
   return (
     <main className={roboto.className}>
-      <Modal>
-        <SignIn />
-      </Modal>
+      {/* Display form modal */}
+      {displayModal.open ? (
+        <Modal onClick={() => showModal(false, "close")}>
+          {displayModal.form === "signin" ? <LogIn /> : <SignUp />}
+        </Modal>
+      ) : (
+        ""
+      )}
       <div className={styles.container}>
         {/* Welcome Text */}
         <div className={styles.welcomeText}>
@@ -28,7 +50,10 @@ export default function Home() {
         </div>
         {/* Buttons */}
         <div className={styles.button_container}>
-          <Button>Sign up</Button> <Button fill='fill'>Log in</Button>
+          <Button onClick={() => showModal(true, "signup")}>Sign up</Button>{" "}
+          <Button fill='fill' onClick={() => showModal(true, "signin")}>
+            Log in
+          </Button>
         </div>
       </div>
     </main>

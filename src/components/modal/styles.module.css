@@ -10,3 +10,7 @@
   );
   backdrop-filter: blur(10px);
 }
+
+.close_button {
+  @apply absolute top-[3%] bg-white w-[40px] h-[40px] rounded-[100%] flex items-center justify-center;
+}

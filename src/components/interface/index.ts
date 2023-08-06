@@ -44,4 +44,5 @@ export interface TextAreaPropsI {
 
 export interface ModalPropsI {
   children: React.ReactNode;
+  onClick?: (param: any) => void;
 }

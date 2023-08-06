@@ -4,16 +4,13 @@ import React from "react";
 import Link from "next/link";
 
 import styles from "./styles.module.css";
-import { SignInWithGoogleBtn, SubmitBtn } from "@/components/buttons";
-import Logo from "@/components/logo";
+import { Button, SignInWithGoogleBtn } from "@/components/buttons";
 
 const SignUp = () => {
   return (
     <div className={styles.container}>
       <div className={styles.form_container}>
-        <div className={styles.logo_container}>
-          <Logo />
-        </div>
+        <div className={styles.logo_container}></div>
         <h1 className={styles.header}>Create Account</h1>
         <p className={styles.welcome_text}>For anyone in need of security.</p>
         <div className={styles.name_container}>
@@ -52,7 +49,9 @@ const SignUp = () => {
           />
         </div>
         <div>
-          <SubmitBtn className='mb-8' label='Continue' />
+          <div className='mb-4'>
+            <Button fill='full'>Submit</Button>
+          </div>
           <SignInWithGoogleBtn label='Continue with Google' />
         </div>
         <div className={styles.cta_container}>

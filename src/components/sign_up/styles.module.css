@@ -6,29 +6,29 @@
 
 /* Form Container */
 .form_container {
-  @apply bg-white flex flex-col w-full lg:w-[35%] h-[80%] rounded-[1rem] px-8 py-12;
+  @apply bg-black flex flex-col w-full lg:w-[35%] h-[80%] rounded-[1rem] px-8 py-12;
 }
 
 /* Media query for form container box shadow */
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .form_container {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
   }
-}
+} */
 
 /* Header */
 .header {
-  @apply mt-4 text-[1.25rem] md:text-[2.625rem] font-normal leading-[24px] md:leading-[49px] text-[#111];
+  @apply mt-4 text-[1.25rem] md:text-[2.625rem] font-normal leading-[24px] md:leading-[49px] text-white;
 }
 
 /* Welcome Text */
 .welcome_text {
-  @apply my-4 text-[0.8rem] md:text-[1rem] font-normal leading-[14px] md:leading-[19px] text-[#6B6F7B];
+  @apply my-4 text-[0.8rem] md:text-[1rem] font-normal leading-[14px] md:leading-[19px] text-white;
 }
 
 /* Label */
 .label {
-  @apply font-[400] text-[1rem] lg:text-[1rem] leading-[120%];
+  @apply font-[400] text-white lg:text-[1rem] leading-[120%];
 }
 
 /* Input */
@@ -42,12 +42,12 @@
 }
 /* Call TO Sign Up Text */
 .cta {
-  @apply leading-[16px] text-[#111] mr-4;
+  @apply leading-[16px] text-white mr-4;
 }
 
 /* Sign up Text */
 .signup_text {
-  @apply font-[600] text-[0.875rem] leading-[16px] text-[#111] cursor-pointer underline;
+  @apply font-[600] text-[0.875rem] leading-[16px] text-white cursor-pointer underline;
 }
 
 /* Name Container */
