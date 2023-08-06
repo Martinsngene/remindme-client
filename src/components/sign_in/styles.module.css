@@ -1,0 +1,44 @@
+/** @format */
+/* Container */
+.container {
+  @apply mx-auto lg:mx-0 w-[80%] lg:w-full h-[100vh] flex items-center justify-center;
+}
+
+/* Form Container */
+.form_container {
+  @apply bg-black flex flex-col w-full lg:w-[35%] h-[80%] rounded-[1rem] px-8 py-12;
+}
+
+/* Header */
+.header {
+  @apply mt-4 text-[1.25rem] md:text-[2.625rem] font-bold leading-6 md:leading-[49px] text-white;
+}
+
+/* Welcome Text */
+.welcome_text {
+  @apply my-4 text-[0.8rem] md:text-[1rem] font-normal leading-[14px] md:leading-[19px] text-white;
+}
+
+/* Label */
+.label {
+  @apply font-[400] text-[1rem] lg:text-[1rem] leading-[120%];
+}
+
+/* Input */
+.input {
+  @apply mb-4 lg:text-[1rem] outline-none w-full border border-[#E1E1E1] rounded-lg h-[15px] px-5 py-5;
+}
+
+/*  */
+.cta_container {
+  @apply mt-4 flex items-center;
+}
+/* Call TO Sign Up Text */
+.cta {
+  @apply leading-[16px] text-white mr-4;
+}
+
+/* Sign up Text */
+.signup_text {
+  @apply font-[600] text-[0.875rem] leading-[16px] text-white cursor-pointer underline;
+}

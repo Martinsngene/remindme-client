@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { RiMenu5Fill } from "react-icons/ri";
-import { Button, MenuButton } from "../button";
+import { Button, MenuButton } from "../buttons";
 import { Links } from "../constants/NavBar.Schema";
 import Menu from "../menu";
 

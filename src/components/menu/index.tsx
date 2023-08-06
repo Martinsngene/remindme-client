@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { RiMenu4Line } from "react-icons/ri";
-import { Button, MenuButton } from "../button";
+import { Button, MenuButton } from "../buttons";
 import { Links } from "../constants/NavBar.Schema";
 
 interface MenuPropsI {
