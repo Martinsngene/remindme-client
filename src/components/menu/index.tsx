@@ -1,8 +1,6 @@
 /** @format */
 
 import Link from "next/link";
-import { useState } from "react";
-import { useSpring, animated, config } from "react-spring";
 import { RiMenu4Line } from "react-icons/ri";
 import { Button, MenuButton } from "../button";
 import { Links } from "../constants/NavBar.Schema";
@@ -12,24 +10,8 @@ interface MenuPropsI {
 }
 
 const Menu = ({ ctrlMenu }: MenuPropsI) => {
-  // Animation from React Spring
-  const [flip, set] = useState(false);
-
-  //   Mount Component Animation
-  const props = useSpring({
-    to: { width: `100%`, opacity: 1, height: `100%` },
-    from: { width: `0%`, opacity: 0, height: `0%` },
-    reset: true,
-    reverse: flip,
-    delay: 200,
-    config: config.molasses,
-    onClick: () => set(!flip),
-  });
-
   return (
-    <animated.div
-      className='bg-[#F5FCFF] z-50 top-0 right-0 left-0 absolute w-[100%] h-[100%] flex items-start justify-center'
-      style={flip ? props : props}>
+    <div className='bg-[#F5FCFF] z-50 top-0 right-0 left-0 absolute w-[100%] h-[100%] flex items-start justify-center'>
       {/* Close Menu Button */}
       <div className='closeMenuBtn  absolute top-[1rem] right-[3rem]'>
         <MenuButton onClick={ctrlMenu}>
@@ -49,7 +31,7 @@ const Menu = ({ ctrlMenu }: MenuPropsI) => {
           );
         })}
       </ul>
-    </animated.div>
+    </div>
   );
 };
 

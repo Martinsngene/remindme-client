@@ -1,0 +1,4 @@
+/* Styles for the container goes here */
+.container {
+  @apply bg-black w-full h-[100vh];
+}
