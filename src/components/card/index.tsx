@@ -1,6 +1,3 @@
-/** @format */
-
-import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import { CardPropsI } from "../interface";
 import styles from "./styles.module.css";
@@ -8,22 +5,13 @@ import styles from "./styles.module.css";
 const Card = ({
   name,
   description,
-  imgUrl,
   linkLabel,
   link,
   className,
 }: CardPropsI) => {
   return (
     <div className={`${styles.container} ${className}`}>
-      <div className={styles.cardImgContainer}>
-        <Image
-          className='rounded-t-[1.5rem]'
-          src={imgUrl}
-          width={300}
-          height={220}
-          alt=''
-        />
-      </div>
+      <div className={styles.counterContainer}></div>
       <div className={styles.name}>{name}</div>
       <div className={styles.cardDescriptionContainer}>
         <p>{description}</p>

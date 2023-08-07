@@ -1,0 +1,21 @@
+/* Styles for the container goes here */
+.container {
+  @apply bg-black w-full h-[100vh] flex flex-col items-center justify-center;
+}
+
+/* Welcome Text */
+.welcomeText {
+  @apply text-white;
+}
+
+.header {
+  @apply font-bold text-[40px] leading-[48px] text-center;
+}
+
+.text {
+  @apply text-[1rem] leading-6;
+}
+
+.button_container {
+  @apply w-[332px] flex items-center justify-between;
+}

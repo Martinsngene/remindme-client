@@ -46,3 +46,8 @@ export interface ModalPropsI {
   children: React.ReactNode;
   onClick?: (param: any) => void;
 }
+
+export interface HomePagePropsI {
+  signUpBtn: (param: any) => void;
+  loginBtn: (param: any) => void;
+}
