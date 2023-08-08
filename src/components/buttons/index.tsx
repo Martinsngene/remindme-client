@@ -20,6 +20,8 @@ export const Button = React.forwardRef((props: ButtonPropsI, ref: any) => {
     </button>
   );
 });
+// Explicitly display function displayName for debugging purposes
+Button.displayName = "Button";
 
 // Sign in with Google Button
 export const SignInWithGoogleBtn = ({ label }: ButtonPropsI) => {

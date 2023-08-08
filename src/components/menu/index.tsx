@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { RiMenu4Line } from "react-icons/ri";
-import { Button, MenuButton } from "../buttons";
+import { Button } from "../buttons";
 import { Links } from "../constants/NavBar.Schema";
 
 interface MenuPropsI {
@@ -14,9 +14,9 @@ const Menu = ({ ctrlMenu }: MenuPropsI) => {
     <div className='bg-[#F5FCFF] z-50 top-0 right-0 left-0 absolute w-[100%] h-[100%] flex items-start justify-center'>
       {/* Close Menu Button */}
       <div className='closeMenuBtn  absolute top-[1rem] right-[3rem]'>
-        <MenuButton onClick={ctrlMenu}>
+        <button onClick={ctrlMenu}>
           <RiMenu4Line />
-        </MenuButton>
+        </button>
       </div>
       {/* Navigation Links */}
       <ul className=' h-[45%] flex items-center justify-around flex-col mt-[50px]'>
