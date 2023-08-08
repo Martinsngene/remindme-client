@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
-import NavBar from "../navbar/NavBar";
-import Footer from "../footer/Footer";
+import NavBar from "../navbar";
+import Footer from "../footer";
 import { GlobalPropsI } from "../interface";
 
 const Layout = ({ children }: GlobalPropsI) => {

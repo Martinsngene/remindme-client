@@ -1,0 +1,14 @@
+/* Styles for the container goes here */
+.container {
+  @apply w-full h-[80px] border border-black py-2 lg:py-0 px-4 lg:px-[3rem] flex flex-col lg:flex-row items-center justify-between;
+}
+
+/* First column */
+.column_one {
+  @apply hidden xl:flex text-[0.75rem] lg:text-[1rem]  text-[#000] font-[700] items-center justify-center;
+}
+
+/* First column */
+.column_two {
+  @apply mb-1 lg:mb-0 flex items-center justify-between text-base md:text-2xl lg:text-[2rem] w-4/5 md:w-[500px];
+}
