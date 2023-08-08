@@ -1,0 +1,4 @@
+.container {
+  @apply w-full h-[100vh] overflow-y-scroll;
+  scroll-snap-type: y mandatory;
+}

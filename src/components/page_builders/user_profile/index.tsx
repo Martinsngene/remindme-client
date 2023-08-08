@@ -1,12 +1,15 @@
-import Layout from '@/components/layout'
-import React from 'react'
+import React from "react";
+import HomePage from "../home";
+import Todos from "../todos";
+import styles from "./styles.module.css";
 
 const UserProfile = () => {
   return (
-   <Layout>
-    Hello World
-   </Layout>
-  )
-}
+    <div className={styles.container}>
+      <HomePage />
+      <Todos />
+    </div>
+  );
+};
 
-export default UserProfile
+export default UserProfile;

@@ -1,0 +1,5 @@
+/* Styles for the container goes here */
+.container {
+  @apply bg-white w-full h-[100vh] flex flex-col items-center justify-center;
+  scroll-snap-align: start;
+}

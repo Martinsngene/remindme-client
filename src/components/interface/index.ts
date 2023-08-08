@@ -48,6 +48,6 @@ export interface ModalPropsI {
 }
 
 export interface HomePagePropsI {
-  signUpBtn: (param: any) => void;
-  loginBtn: (param: any) => void;
+  signUpBtn?: (param: any) => void;
+  loginBtn?: (param: any) => void;
 }
