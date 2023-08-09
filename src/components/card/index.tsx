@@ -1,26 +1,19 @@
-import { BsArrowRight } from "react-icons/bs";
+import { Button } from "../buttons";
 import { CardPropsI } from "../interface";
 import styles from "./styles.module.css";
 
-const Card = ({
-  name,
-  description,
-  linkLabel,
-  link,
-  className,
-}: CardPropsI) => {
+const Card = ({ name, description, onClick, className }: CardPropsI) => {
   return (
     <div className={`${styles.container} ${className}`}>
-      <div className={styles.counterContainer}></div>
-      <div className={styles.name}>{name}</div>
-      <div className={styles.cardDescriptionContainer}>
-        <p>{description}</p>
+      <div>
+        <div className={styles.counter_container}>{100}</div>
+        <div className={styles.name}>{name}</div>
+        <div className={styles.cardDescriptionContainer}>
+          <p>{description}</p>
+        </div>
       </div>
       <div className={styles.cardLinkContainer}>
-        <a href={`${link}`} target='_blank' className={styles.cardLink}>
-          <span>{linkLabel}</span>
-          <BsArrowRight />
-        </a>
+        <Button onClick={onClick}>view</Button>
       </div>
     </div>
   );

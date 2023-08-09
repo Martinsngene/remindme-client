@@ -1,5 +1,13 @@
 /* Styles for the container goes here */
 .container {
-  @apply bg-white w-full h-[100vh] flex flex-col items-center justify-center;
+  @apply bg-white w-full h-[100vh] pt-[10rem] flex flex-col items-center justify-start;
   scroll-snap-align: start;
+}
+
+.card_container {
+  @apply grid grid-cols-1 lg:grid-cols-3;
+}
+
+.card_container > div {
+  @apply mb-8 mx-3;
 }

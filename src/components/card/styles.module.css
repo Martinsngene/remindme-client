@@ -2,12 +2,12 @@
 
 /* Card Container */
 .container {
-  @apply bg-[#fff] w-[300px] pb-2 hover:shadow-2xl mb-[1rem] rounded-[1.5rem] md:mb-0;
+  @apply flex p-[1rem] items-end justify-between border border-[#D9D9D9] bg-[#fff] w-[480px] h-[132px] hover:shadow-2xl;
 }
 
 /* Card Image Container */
-.cardImgContainer {
-  @apply rounded-t-[1.5rem] w-full h-[220px] flex  items-center justify-center;
+.counter_container {
+  @apply text-[48px] font-extrabold;
 }
 
 /* Name */
@@ -18,14 +18,4 @@
 /* Card Description Container */
 .cardDescriptionContainer {
   @apply text-[0.5rem] lg:text-[1rem] mt-1 lg:mt-0 lg:px-2 px-2;
-}
-
-/* Card Link Container */
-.cardLinkContainer {
-  @apply my-1 lg:my-2 lg:mx-3;
-}
-
-/* Card Link */
-.cardLink {
-  @apply text-[#123384] text-[0.5rem] lg:text-[1rem] font-[600] flex w-full items-center justify-between;
 }

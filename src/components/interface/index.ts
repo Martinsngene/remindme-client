@@ -18,10 +18,11 @@ export interface ButtonPropsI {
 export interface CardPropsI {
   name?: string;
   className?: string;
-  description: string;
-  linkLabel: string;
-  imgUrl: string;
+  description?: string;
+  linkLabel?: string;
+  imgUrl?: string;
   link?: string;
+  onClick?: (param: any) => void;
 }
 
 export interface InputPropsI {
