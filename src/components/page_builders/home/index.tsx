@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import Input from "@/components/customInput";
 import { Button } from "@/components/buttons";
 import { HomePagePropsI } from "@/components/interface";
+import Image from "next/image";
 
 const HomePage = ({ signUpBtn, loginBtn }: HomePagePropsI) => {
   return (
@@ -13,12 +14,13 @@ const HomePage = ({ signUpBtn, loginBtn }: HomePagePropsI) => {
         <p className={styles.text}>A planned day is a great day</p>
       </div>
       {/* Form for Log in/ Sign up */}
-      <div className='w-[360px]'>
+      {/* <div className='w-[360px]'>
         <div className='mb-[0.5rem]'>
           <Input type='text' placeHolder='Enter your email' />
         </div>
         <Input type='text' placeHolder='Enter your password' />
-      </div>
+      </div> */}
+      <Image width={400} height={800} alt='' src='/home.svg' />
       {/* Buttons */}
       <div className={styles.button_container}>
         <Button onClick={signUpBtn}>Sign up</Button>{" "}

@@ -1,12 +1,9 @@
-import { Roboto } from "next/font/google";
 import Modal from "@/components/modal";
 import LogIn from "@/components/log_in";
 import { useState } from "react";
 import SignUp from "@/components/sign_up";
 import HomePage from "@/components/page_builders/home";
-
-// Font for application
-const roboto = Roboto({ weight: "400", subsets: ["latin"] });
+import Layout from "@/components/layout";
 
 export default function Home() {
   // State management for forms
@@ -24,7 +21,7 @@ export default function Home() {
   };
 
   return (
-    <main className={roboto.className}>
+    <Layout>
       {/* Display form modal */}
       {displayModal.open ? (
         <Modal onClick={() => showModal(false, "close")}>
@@ -37,6 +34,6 @@ export default function Home() {
         signUpBtn={() => showModal(true, "signup")}
         loginBtn={() => showModal(true, "signin")}
       />
-    </main>
+    </Layout>
   );
 }

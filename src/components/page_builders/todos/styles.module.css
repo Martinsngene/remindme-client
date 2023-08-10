@@ -1,6 +1,6 @@
 /* Styles for the container goes here */
 .container {
-  @apply bg-white w-full h-[100vh] pt-[10rem] flex flex-col items-center justify-start;
+  @apply bg-white w-full h-[100vh] py-[7rem] flex flex-col items-center justify-between;
   scroll-snap-align: start;
 }
 

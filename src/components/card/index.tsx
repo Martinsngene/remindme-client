@@ -13,7 +13,9 @@ const Card = ({ name, description, onClick, className }: CardPropsI) => {
         </div>
       </div>
       <div className={styles.cardLinkContainer}>
-        <Button onClick={onClick}>view</Button>
+        <Button fill='fill' onClick={onClick}>
+          view
+        </Button>
       </div>
     </div>
   );

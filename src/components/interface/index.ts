@@ -5,6 +5,7 @@ export interface GlobalPropsI {
   showHeader?: boolean;
   children: React.ReactNode;
   className?: string;
+  displayModal?: { open: boolean; form: string };
 }
 
 export interface ButtonPropsI {

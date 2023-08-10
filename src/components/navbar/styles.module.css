@@ -1,6 +1,6 @@
 /* Styles for container */
 .container {
-  @apply w-full  h-[60px] fixed top-0 left-0 right-0 bg-white py-2 lg:py-0 px-4 lg:px-[3rem] flex flex-col lg:flex-row items-center justify-between;
+  @apply w-full h-[60px] fixed top-0 left-0 right-0 bg-black py-2 lg:py-0 px-4 lg:px-[3rem] flex flex-col lg:flex-row items-center justify-between;
 }
 
 /* Styles for logo container */
@@ -15,5 +15,5 @@
 
 /* Styles for Nav Link */
 .nav_link {
-  @apply text-[#000] text-[0.75rem] xl:text-[1rem] font-[700] leading-[1.5rem];
+  @apply text-[#fff] rounded-[0.5rem] hover:bg-[#2dc653] text-[0.75rem] w-[120px] px-2 py-3 xl:text-[1rem] font-[700] leading-[1.5rem];
 }
