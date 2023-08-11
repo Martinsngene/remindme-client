@@ -11,10 +11,10 @@ interface MenuPropsI {
 
 const Menu = ({ ctrlMenu }: MenuPropsI) => {
   return (
-    <div className='bg-[#F5FCFF] z-50 top-0 right-0 left-0 absolute w-[100%] h-[100%] flex items-start justify-center'>
+    <div className='bg-[#F5FCFF] z-50 top-0 right-0 left-0 bottom-0 absolute w-full h-full flex items-center justify-center'>
       {/* Close Menu Button */}
       <div className='closeMenuBtn  absolute top-[1rem] right-[3rem]'>
-        <button onClick={ctrlMenu}>
+        <button className='text-white' onClick={ctrlMenu}>
           <RiMenu4Line />
         </button>
       </div>

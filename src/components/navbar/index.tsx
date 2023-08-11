@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <div className={styles.container}>
       {/* Logo */}
-      <div className={styles.logo_container}>D</div>
+      <div className={styles.logo_container}>Daily</div>
       {/* Nav Links Container */}
       <ul className={styles.nav_links_container}>
         {Links.map((item, index) => {
@@ -26,7 +26,7 @@ const NavBar = () => {
       </ul>
       {/* Open Menu Button */}
       <div className='block md:hidden'>
-        <button onClick={() => setMenuState(true)}>
+        <button className='text-white' onClick={() => setMenuState(true)}>
           <RiMenu5Fill />
         </button>
       </div>

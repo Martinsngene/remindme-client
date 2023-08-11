@@ -1,16 +1,16 @@
 /* Styles for container */
 .container {
-  @apply w-full h-[60px] fixed top-0 left-0 right-0 bg-black py-2 lg:py-0 px-4 lg:px-[3rem] flex flex-col lg:flex-row items-center justify-between;
+  @apply w-full h-[60px] fixed top-0 left-0 right-0 bg-black py-2 lg:py-0 px-8 lg:px-[3rem] flex flex-row items-center justify-between;
 }
 
 /* Styles for logo container */
 .logo_container {
-  @apply w-[30px] h-[30px] lg:w-[50px] lg:h-[50px] flex items-center justify-center font-bold text-lg;
+  @apply w-[30px] h-[30px] lg:w-[50px] lg:h-[50px] flex items-center justify-center text-white font-extrabold text-2xl;
 }
 
 /* Styles for Nav Links Container */
 .nav_links_container {
-  @apply w-[80%] xl:w-[55%] items-center justify-between hidden md:flex;
+  @apply w-[60%] xl:w-[55%] items-center justify-between hidden md:flex;
 }
 
 /* Styles for Nav Link */

@@ -1,7 +1,7 @@
 /* Styles for button goes here */
 .filled,
 .outlined {
-  @apply w-[160px] h-[48px] rounded-[0.5rem] border text-center font-medium leading-6;
+  @apply w-[120px] md:w-[160px] h-[40px] md:h-[48px] rounded-[0.5rem] border text-center font-medium leading-6;
 }
 
 .filled {

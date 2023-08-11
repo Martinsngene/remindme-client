@@ -18,5 +18,5 @@
 }
 
 .button_container {
-  @apply w-[332px] flex items-center justify-between;
+  @apply w-[250px] md:w-[332px] mt-4 flex items-center justify-between;
 }

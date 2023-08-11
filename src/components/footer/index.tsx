@@ -7,16 +7,16 @@ const Footer = () => {
   return (
     <div className={styles.container}>
       <div className={styles.column_one}>
-        <span className='mr-2'>Copyright</span>
-        <span>&copy;</span>
-        <span className='ml-2'>2023 Martins Ngene. All Rights Reserved.</span>
+        <p>Copyright &copy; 2023 Martins Ngene. All Rights Reserved.</p>
       </div>
       <div className={styles.column_two}>
         {footerIcons.map((icon, index) => {
           return (
             <div className='cursor-pointer' key={index}>
               <Link href={icon.link} passHref={true}>
-                <span title={icon.name}>{icon.icon}</span>
+                <div className={styles.link} title={icon.name}>
+                  {icon.icon}
+                </div>
               </Link>
             </div>
           );

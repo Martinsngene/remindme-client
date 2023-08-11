@@ -20,7 +20,14 @@ const HomePage = ({ signUpBtn, loginBtn }: HomePagePropsI) => {
         </div>
         <Input type='text' placeHolder='Enter your password' />
       </div> */}
-      <Image width={400} height={800} alt='' src='/home.svg' />
+      <div className={styles.image_container}>
+        <Image
+          width={250}
+          height={500}
+          alt='Home Screen Image'
+          src='/home.svg'
+        />
+      </div>
       {/* Buttons */}
       <div className={styles.button_container}>
         <Button onClick={signUpBtn}>Sign up</Button>{" "}
