@@ -1,32 +1,24 @@
-/** @format */
-
 import Link from "next/link";
-import { RiMenu4Line } from "react-icons/ri";
-import { Button } from "../buttons";
-import { Links } from "../constants/NavBar.Schema";
+import { BsXLg } from "react-icons/bs";
 
-interface MenuPropsI {
-  ctrlMenu: any;
-}
+import { Links } from "../constants/NavBar.Schema";
+import { MenuPropsI } from "../interface";
 
 const Menu = ({ ctrlMenu }: MenuPropsI) => {
   return (
-    <div className='bg-[#F5FCFF] z-50 top-0 right-0 left-0 bottom-0 absolute w-full h-full flex items-center justify-center'>
+    <div className='fixed flex items-start justify-center w-full h-[100vh] top-0 right-0 left-0 bottom-0 bg-[#2dc653]'>
       {/* Close Menu Button */}
-      <div className='closeMenuBtn  absolute top-[1rem] right-[3rem]'>
-        <button className='text-white' onClick={ctrlMenu}>
-          <RiMenu4Line />
+      <div className='absolute top-[1.5%] right-[8%]'>
+        <button className='text-white text-[2rem]' onClick={ctrlMenu}>
+          <BsXLg />
         </button>
       </div>
       {/* Navigation Links */}
-      <ul className=' h-[45%] flex items-center justify-around flex-col mt-[50px]'>
+      <ul className='flex flex-col items-center justify-around h-[50%] pt-[10rem]'>
         {Links.map((item, index) => {
           return (
-            <Link key={index} href={item.route}>
-              <Button
-                className={`text-[#1C1E53] text-[1rem] font-[600] leading-[150%]`}>
-                {item.link}
-              </Button>
+            <Link className='text-white' key={index} href={item.route} passHref>
+              <button>{item.link}</button>
             </Link>
           );
         })}

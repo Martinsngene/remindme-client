@@ -1,13 +1,20 @@
 /* Styles for the container goes here */
 .container {
-  @apply bg-white w-full h-[100vh] py-[7rem] flex flex-col items-center justify-between;
-  scroll-snap-align: start;
+  @apply bg-white w-full h-full md:h-[100vh] py-[7rem] flex flex-col items-center justify-between;
+}
+
+@media (min-width: 768) {
+  .container {
+    @apply h-full;
+    scroll-snap-align: start;
+  }
 }
 
 .card_container {
-  @apply grid grid-cols-1 lg:grid-cols-3;
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
 }
 
+/* Cards */
 .card_container > div {
-  @apply mb-8 mx-3;
+  @apply mb-8 mx-0 md:mx-3;
 }

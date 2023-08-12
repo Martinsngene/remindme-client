@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { useState } from "react";
-import { RiMenu5Fill } from "react-icons/ri";
+import { BiMenu } from "react-icons/bi";
+
 import { Links } from "../constants/NavBar.Schema";
 import Menu from "../menu";
 // Import css module here
@@ -26,8 +27,10 @@ const NavBar = () => {
       </ul>
       {/* Open Menu Button */}
       <div className='block md:hidden'>
-        <button className='text-white' onClick={() => setMenuState(true)}>
-          <RiMenu5Fill />
+        <button
+          className={styles.menu_open_button}
+          onClick={() => setMenuState(true)}>
+          <BiMenu />
         </button>
       </div>
       {/* Menu */}

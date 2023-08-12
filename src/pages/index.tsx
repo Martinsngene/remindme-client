@@ -4,6 +4,7 @@ import { useState } from "react";
 import SignUp from "@/components/sign_up";
 import HomePage from "@/components/page_builders/home";
 import Layout from "@/components/layout";
+import ModalBody from "@/components/page_builders/modal_body";
 
 export default function Home() {
   // State management for forms
@@ -25,7 +26,9 @@ export default function Home() {
       {/* Display form modal */}
       {displayModal.open ? (
         <Modal onClick={() => showModal(false, "close")}>
-          {displayModal.form === "signin" ? <LogIn /> : <SignUp />}
+          <ModalBody>
+            {displayModal.form === "signin" ? <LogIn /> : <SignUp />}
+          </ModalBody>
         </Modal>
       ) : (
         ""

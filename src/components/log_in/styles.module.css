@@ -1,13 +1,6 @@
 /** @format */
 /* Container */
-.container {
-  @apply mx-auto lg:mx-0 w-[80%] lg:w-full h-[100vh] flex items-center justify-center;
-}
 
-/* Form Container */
-.form_container {
-  @apply bg-black flex flex-col w-full lg:w-[35%] h-[80%] rounded-[1rem] px-8 py-12;
-}
 
 /* Header */
 .header {

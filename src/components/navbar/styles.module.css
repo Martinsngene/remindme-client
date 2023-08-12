@@ -17,3 +17,7 @@
 .nav_link {
   @apply text-[#fff] rounded-[0.5rem] hover:bg-[#2dc653] text-[0.75rem] w-[120px] px-2 py-3 xl:text-[1rem] font-[700] leading-[1.5rem];
 }
+
+.menu_open_button {
+  @apply text-white text-[2rem];
+}

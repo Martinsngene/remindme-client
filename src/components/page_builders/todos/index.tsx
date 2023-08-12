@@ -19,7 +19,7 @@ const Todos = () => {
         })}
       </div>
       {/* Pagination */}
-      {/* <div>hello world</div> */}
+      <div>Pagination</div>
     </div>
   );
 };

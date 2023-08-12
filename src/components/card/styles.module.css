@@ -2,7 +2,7 @@
 
 /* Card Container */
 .container {
-  @apply flex p-[1rem] items-end justify-between border border-[#D9D9D9] bg-[#fff] w-[480px] h-[140px] hover:shadow-2xl;
+  @apply w-full md:w-[320px] lg:w-[480px] h-[140px] flex items-end justify-between border border-[#D9D9D9] p-[1rem] bg-[#fff] hover:shadow-2xl;
 }
 
 /* Card Image Container */

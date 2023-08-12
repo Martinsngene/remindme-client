@@ -1,0 +1,15 @@
+.container {
+  @apply mx-auto lg:mx-0 w-[90%] lg:w-full h-[100vh] flex items-center justify-center;
+}
+
+/* Form Container */
+.form_container {
+  @apply bg-black flex flex-col w-full lg:w-[35%] h-[80%] rounded-[1rem] px-4 md:px-8 py-12;
+}
+
+/* Media query for form container box shadow */
+/* @media screen and (min-width: 1024px) {
+  .form_container {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+  }
+} */

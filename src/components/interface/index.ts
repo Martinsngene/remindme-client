@@ -53,3 +53,7 @@ export interface HomePagePropsI {
   signUpBtn?: (param: any) => void;
   loginBtn?: (param: any) => void;
 }
+
+export interface MenuPropsI {
+  ctrlMenu: any;
+}
