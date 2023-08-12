@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 const UserProfile = () => {
   return (
     <div className={styles.container}>
-      <HomePage />
+      <HomePage isLoggedIn={true} />
       <Todos />
     </div>
   );

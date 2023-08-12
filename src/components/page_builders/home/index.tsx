@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./styles.module.css";
-import Input from "@/components/customInput";
-import { Button } from "@/components/buttons";
-import { HomePagePropsI } from "@/components/interface";
 import Image from "next/image";
 
-const HomePage = ({ signUpBtn, loginBtn }: HomePagePropsI) => {
+import styles from "./styles.module.css";
+import { Button } from "@/components/buttons";
+import { HomePagePropsI } from "@/components/interface";
+
+const HomePage = ({ signUpBtn, loginBtn, isLoggedIn }: HomePagePropsI) => {
   return (
     <div className={styles.container}>
       {/* Welcome Text */}
@@ -13,28 +13,28 @@ const HomePage = ({ signUpBtn, loginBtn }: HomePagePropsI) => {
         <h1 className={styles.header}>Daily</h1>
         <p className={styles.text}>A planned day is a great day</p>
       </div>
-      {/* Form for Log in/ Sign up */}
-      {/* <div className='w-[360px]'>
-        <div className='mb-[0.5rem]'>
-          <Input type='text' placeHolder='Enter your email' />
-        </div>
-        <Input type='text' placeHolder='Enter your password' />
-      </div> */}
+      {/* Display Image */}
       <div className={styles.image_container}>
         <Image
-          width={250}
-          height={500}
+          width={400}
+          height={700}
           alt='Home Screen Image'
           src='/home.svg'
         />
       </div>
       {/* Buttons */}
-      <div className={styles.button_container}>
-        <Button onClick={signUpBtn}>Sign up</Button>{" "}
-        <Button fill='fill' onClick={loginBtn}>
-          Log in
-        </Button>
-      </div>
+      {isLoggedIn ? (
+        <div className={styles.task_button_container}>
+          <Button fill='full'>Add New Tasks</Button>
+        </div>
+      ) : (
+        <div className={styles.button_container}>
+          <Button onClick={signUpBtn}>Sign up</Button>
+          <Button fill='fill' onClick={loginBtn}>
+            Log in
+          </Button>
+        </div>
+      )}
     </div>
   );
 };

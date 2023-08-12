@@ -50,6 +50,7 @@ export interface ModalPropsI {
 }
 
 export interface HomePagePropsI {
+  isLoggedIn?: boolean;
   signUpBtn?: (param: any) => void;
   loginBtn?: (param: any) => void;
 }

@@ -1,7 +1,9 @@
 import React from "react";
+import Image from "next/image";
+import { VscTriangleDown } from "react-icons/vsc";
+
 import { ButtonPropsI } from "../interface";
 import styles from "./styles.module.css";
-import Image from "next/image";
 
 //Button
 export const Button = React.forwardRef((props: ButtonPropsI, ref: any) => {
@@ -35,6 +37,19 @@ export const SignInWithGoogleBtn = ({ label }: ButtonPropsI) => {
         className='mr-3'
       />
       {label}
+    </button>
+  );
+};
+
+export const ProfileBtn = ({ label }: ButtonPropsI) => {
+  return (
+    <button className={styles.profile_btn}>
+      <div className={styles.profile_image_container}>
+        <Image src='/profile.svg' alt='profile picture' fill />
+      </div>
+      <div className={styles.profile_icon}>
+        <VscTriangleDown />
+      </div>
     </button>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import Card from "@/components/card";
 import { mockTodos } from "@/components/mock";
+import { Button } from "@/components/buttons";
 
 const Todos = () => {
   return (
@@ -19,7 +20,10 @@ const Todos = () => {
         })}
       </div>
       {/* Pagination */}
-      <div>Pagination</div>
+      <div className={styles.button_container}>
+        <Button>Previous</Button>
+        <Button>Next</Button>
+      </div>
     </div>
   );
 };

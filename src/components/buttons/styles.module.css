@@ -20,3 +20,15 @@
 .google_btn {
   @apply text-white w-full flex items-center justify-center rounded-lg border border-[#DADADA] font-medium text-[0.5rem] md:text-[1rem] h-[48px];
 }
+
+/* Profile Button Styles */
+.profile_btn {
+  @apply flex items-center justify-between w-[90px] h-[50px];
+}
+.profile_image_container {
+  @apply relative w-[50px] h-[50px] rounded-full mt-6 -translate-y-3;
+}
+
+.profile_icon {
+  @apply text-white text-[2rem];
+}

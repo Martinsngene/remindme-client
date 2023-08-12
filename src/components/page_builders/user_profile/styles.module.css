@@ -1,10 +1,3 @@
 .container {
-  @apply w-full h-full overflow-y-scroll;
-}
-
-@media (min-width: 768) {
-  .container {
-    @apply h-[100vh];
-    scroll-snap-type: y mandatory;
-  }
+  @apply w-full h-full;
 }

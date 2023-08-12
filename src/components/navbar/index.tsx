@@ -1,12 +1,11 @@
-import React from "react";
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 
 import { Links } from "../constants/NavBar.Schema";
 import Menu from "../menu";
-// Import css module here
 import styles from "./styles.module.css";
+import { ProfileBtn } from "../buttons";
 
 const NavBar = () => {
   const [menuState, setMenuState] = useState(false);
@@ -25,6 +24,9 @@ const NavBar = () => {
           );
         })}
       </ul>
+      <div>
+        <ProfileBtn />
+      </div>
       {/* Open Menu Button */}
       <div className='block md:hidden'>
         <button
