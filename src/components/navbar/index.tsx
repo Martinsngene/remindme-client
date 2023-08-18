@@ -13,7 +13,9 @@ const NavBar = () => {
   return (
     <div className={styles.container}>
       {/* Logo */}
-      <div className={styles.logo_container}>Daily</div>
+      <div className={styles.logo_container}>
+        <Link href='/'>Daily</Link>
+      </div>
       {/* Nav Links Container */}
       <ul className={styles.nav_links_container}>
         {Links.map((item, index) => {
