@@ -1,5 +1,4 @@
 import random
-
 from flask import Flask, request, abort, jsonify
 from flask_cors import CORS
 
@@ -66,8 +65,10 @@ def create_app(test_config=None):
     # TODO: Use the after_request decorator to set Access-Control-Allow
     @app.after_request
     def after_request(response):
-        response.headers.add("Access-Control-Allow-Headers", "Content-Type, Authorization, true")
-        response.headers.add("Access-Control-Allow-Headers", "GET, POST, DELETE, PUT, PATCH, OPTIONS")
+        response.headers.add("Access-Control-Allow-Headers",
+                             "Content-Type, Authorization, true")
+        response.headers.add("Access-Control-Allow-Headers",
+                             "GET, POST, DELETE, PUT, PATCH, OPTIONS")
         return response
 
     # TODO: Create an endpoint to handle GET requests for all available categories.
@@ -205,7 +206,8 @@ def create_app(test_config=None):
             abort(404)
 
         return jsonify(
-            {"questions": format_search_result, "totalQuestions": len(search_result), "currentCategory": ""}
+            {"questions": format_search_result, "totalQuestions": len(
+                search_result), "currentCategory": ""}
         )
 
     """
