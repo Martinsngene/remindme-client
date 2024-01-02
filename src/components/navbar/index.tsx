@@ -14,7 +14,7 @@ const NavBar = () => {
     <div className={styles.container}>
       {/* Logo */}
       <div className={styles.logo_container}>
-        <Link href='/'>Daily</Link>
+        <Link href='/'>RemindMe</Link>
       </div>
       {/* Nav Links Container */}
       <ul className={styles.nav_links_container}>
