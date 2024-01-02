@@ -27,7 +27,9 @@ const NavBar = () => {
         })}
       </ul>
       <div>
-        <ProfileBtn />
+        <Link href='/user'>
+          <ProfileBtn />
+        </Link>
       </div>
       {/* Open Menu Button */}
       <div className='block md:hidden'>

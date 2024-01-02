@@ -1,7 +1,3 @@
-/** @format */
-
-import React from "react";
-
 import styles from "./styles.module.css";
 import { ModalPropsI } from "../interface";
 import Image from "next/image";

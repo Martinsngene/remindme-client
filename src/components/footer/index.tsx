@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className={styles.container}>
       <div className={styles.column_one}>
-        <p>Copyright &copy; 2023 Martins Ngene. All Rights Reserved.</p>
+        <p>Made with 💚 by Martins Ngene. Powered by Vercel.</p>
       </div>
       <div className={styles.column_two}>
         {footerIcons.map((icon, index) => {

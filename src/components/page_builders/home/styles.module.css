@@ -1,6 +1,11 @@
 /* Styles for the container goes here */
 .container {
   @apply bg-black w-full h-[100vh] flex flex-col items-center justify-center;
+  /* background-image: linear-gradient(
+    to bottom,
+    rgba(45, 99, 216, 1),
+    rgba(48, 72, 165, 1)
+  ); */
 }
 
 /* Welcome Text */
